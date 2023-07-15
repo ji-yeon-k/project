@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/*** Common style ***/
+section, footer {
+    width: 1400px;
+    margin: 0 auto;
+}
+/* margin,padding */
+.pd-l20px {padding-left: 20px;}
+.pd-r20px {padding-right: 20px;}
+.pd-b20px {padding-bottom: 20px;}
+.pd-lr20px {padding: 0 20px;}
+.pd-0 {padding: 0;}
+.mt-20 {margin-top: 20px;}
+
+/* width */
+.w100 {width: 100%;}
+
+/* color */
+.fc_rd {color: #b31c35;}
+.fc_bk {color: #000;}
+.fc_bl {color: #1455d9;}
+.fc_gr {color: #00683d;}
+.fc_pk {color: #e4007f;}
+
+/*** Common style ***/
+header { background: #ca0101;}
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-left: 104px;
+}
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+header nav li {
+    position: relative;
+}
+header nav li a {
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    transition: all .3s;
+    transform: scale(1);
+    display: block;
+    padding: 0 30px;
+}
+header nav li::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background: #fcff29;
+    visibility: hidden;
+}
+header nav li a:hover {
+    transform: scale(1.3); /* li hover시 font-size변경보다는 scale을 이용해서 크기 변경을 한다 */
+}
+header nav li:hover::after  {
+    visibility: visible;
+}
+header .button_wrap {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header .button_wrap a {
+    width: 100px;
+    height: 80px;
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+}
+header .button_wrap a:nth-child(1) {
+    background: #ff7f00;
+    color: #000;
+}
+header .button_wrap a:nth-child(2) {
+    background: #3353d7;
+    color: #fff;
+}
+
+/* Main Content Style*/
+
+/*** swiper slide custom Start ***/
+.swiper {
+    width: 100%;
+    height: 710px;
+    background: #eee;
+}
+.swiper .swiper-pagination span {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 5px 1px #000;
+}
+.swiper-pagination-bullet-active {
+    background: #fff !important;
+}
+.swiper-pagination-bullet {
+    opacity: 1;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizonta {
+    bottom: 30px;
+}
+/*** swiper slide custom End ***/
+.conv_menu {
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.conv_menu ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    text-align: center;
+}
+.conv_menu ul li {
+    width: 133px;
+    height: 117px;
+    margin-right: -1px;
+    border: 1px solid #ddd;
+}
+.conv_menu ul li img,
+.conv_menu ul li span {
+    display: block;
+}
+.conv_menu ul li img {
+    margin: 0 auto;
+}
+.conv_menu ul li span {
+    margin-top: -20px;
+}
+.conv_menu ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+.conv_menu ul li a:hover {
+    text-decoration: underline;
+}
+section .title {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 40px 0 45px 0;
+    color: #0d1440;
+}
+.title_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.title_wrap a { 
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: inline-block;
+    padding: 25px 30px 0 0;
+    color: #79858c;
+}
+.title_wrap a::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background: #79858c;
+    top: 50%;
+    right: 0;
+}
+.title_wrap a::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    background: #79858c;
+    top: 0;
+    right: 20px;
+}
+.schedule .cal {
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    border: 1px solid #ddd;
+    background: #eee;
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+}
+.schedule ul {
+    margin-top: 25px;
+    font-size: 16px;
+}
+.schedule ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.schedule ul i {
+    padding: 0 5px 0 0;
+    font-size: 13px;
+}
+/******************공지사항********************/
+.notice_wrap {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+.notice_wrap .notice {
+    width: auto;
+    margin: 0;
+    display: inline-block;
+}
+.notice_wrap .more {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.notice_wrap .notice ul {
+    width: 900px;
+    display: inline-block;
+}
+.notice_wrap .notice ul li {
+    font-size: 20px;
+    padding: 15px 0;
+}
+.notice_wrap .notice ul li a {
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+.notice_wrap .notice ul li .notice_title:hover {
+    color: #3353d7;
+    text-decoration: underline;
+}
+.notice_wrap .notice .notice_day {
+    color: #767676;
+}
+.notice_wrap .banner {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #ddd;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+}
+.notice_wrap .banner a {
+    color: #000;
+}
+/******************공지사항********************/
+.banner .banner-swiper {
+    width: 400px;
+    height: 400px;
+}
+.banner .banner-swiper:hover {
+    outline: 5px solid #3353d7;
+}
+.banner .banner-swiper img {
+    width: 100%;
+}
+
+.enterance {
+    position: relative;
+    width: 100%;
+    background: url('../img/main/ipsi_bg.png') 50% 50% no-repeat;
+    padding: 50px 0;
+    margin: 30px 0;
+}
+.enterance::before {
+    content: '';
+    position: absolute;
+    top: -504px;
+    right: 0;
+    left: 50%;
+    height: 592px;
+    margin-left: 335px;
+    background: url('../img/sub_media/popup_bg.png') no-repeat 294px bottom #f5f5f5;
+    z-index: -1;
+}
+.enterance a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.enterance ul li {
+    display: inline-block;
+}
+.enterance .gocenter {
+    font-size: 20px;
+    padding: 10px 50px;
+    margin-left: 30px;
+    background: #ffff00;
+    color: #0d1440;
+}
+.enterance .gocenter:hover {
+    text-decoration: underline;
+}

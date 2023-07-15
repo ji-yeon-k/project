@@ -1,0 +1,19 @@
+.visual_wrap {
+    width: 100%;
+    height: calc(100% - 25%); /* calc식 쓰는 이유 ? */
+    display: inline-block;
+    position: relative;
+}
+.visual_wrap .sliderBox {
+    height: 100% !important; /* sliderBox height 값 선언 이유 ? */
+}
+.visual_wrap ul li {
+    height: 100%; /* li의 height 값 100%로 선언한 이유 */
+    background-color: #fff;
+}
+.visual_wrap .sliderBox .thumb, /* 이미지 -랜딩이동- 왜 span으로 한번 더 감싸서 쓰는지 */
+.visual_wrap .sliderBox a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
