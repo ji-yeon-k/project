@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+		v2.0 | 20110126
+		License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	letter-spacing: -0.5px;
 }
 ol, ul {
 	list-style: none;
@@ -48,4 +49,5 @@ table {
 }
 a {
 	text-decoration: none;
+	color: #222;
 }

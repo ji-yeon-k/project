@@ -1,0 +1,68 @@
+section, footer {
+  width: 1400px;
+  margin: 0 auto;
+}
+/* margin,padding */
+.pd-l20px {padding-left: 20px;}
+.pd-r20px {padding-right: 20px;}
+.pd-b20px {padding-bottom: 20px;}
+.pd-lr20px {padding: 0 20px;}
+.pd-0 {padding: 0;}
+.mt-20 {margin-top: 20px;}
+
+/* width */
+.w100 {width: 100%;}
+
+/* color */
+.fc_rd {color: #b31c35;}
+.fc_bk {color: #000;}
+.fc_bl {color: #1455d9;}
+.fc_gr {color: #00683d;}
+.fc_pk {color: #e4007f;}
+
+/* title size */
+.tt-tp {
+  font-size: 30px;
+}
+.tt-bt {
+  font-size: 50px;
+}
+
+/* More button */
+.title_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.title_wrap a { 
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-size: 14px;
+  display: inline-block;
+  padding: 25px 30px 0 0;
+  color: #79858c;
+  border: 1px solid #000;
+}
+.title_wrap a::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background: #79858c;
+  top: 50%;
+  right: 0;
+}
+.title_wrap a::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  background: #79858c;
+  top: 0;
+  right: 20px;
+}
+.title_wrap a:hover {
+  color: #1455d9;
+}
