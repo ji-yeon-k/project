@@ -307,3 +307,8 @@ section .title {
     margin-top: 40px;
     padding-bottom: 55px;
 }
+.sns-wrap {
+    width: 198px;
+    height: 39px;
+    background: url('../img/inc/sns_ir.png') no-repeat center center;
+}
