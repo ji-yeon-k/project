@@ -1,0 +1,30 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "editor.mouseWheelZoom": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.wordWrap": "on",
+    "liveServer.settings.fullReload": true,
+    "liveSassCompile.settings.generateMap":false,
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css",
+            // "savePathReplacementPairs": null
+        }
+    ],
+    "launch": {
+        
+
+    
+
+        "configurations": [],
+        "compounds": []
+    }
+}

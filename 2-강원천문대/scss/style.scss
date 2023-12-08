@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* Import SCSS Files */
+@import "reset";
+@import "header";
+@import "footer";
+@import "font";
+@import "variable";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
