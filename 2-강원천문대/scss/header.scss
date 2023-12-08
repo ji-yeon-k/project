@@ -1,1 +1,30 @@
-@charset "utf-8";
+@import "variable";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $bgc-bl; 
+    padding: 2.5rem 0 2.5rem 4rem;
+    h1 {
+        font-size: 3rem;
+        color: $fc-w;
+    }
+    ul {
+        background: $bgc-d-bl;
+        li {
+            display: inline-block;
+            text-align: center;
+            &:hover {
+                background: $bgc-m-bl;
+            }
+            a {
+                display: block;
+                padding: 2rem 4.5rem;
+                color: $fc-w;
+                font-size: 1.6rem;
+                font-weight: 300;
+            }
+        }
+    }
+}

@@ -1,12 +1,9 @@
-/* Import SCSS Files */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Noto+Sans:wght@300;400;500;600&display=swap");
-@im @import "header";
-body {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-/* Font color */
-/* Background color */
+/* Import SCSS File 
+@import "reset";
+@import "variable";
+@import "header";
+@import "footer";
+*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,4 +17,7 @@ html {
 
 body {
   font-family: "Noto Sans KR", sans-serif;
+  line-height: 1;
+  max-width: 1200px;
+  margin: 0 auto;
 }

@@ -1,0 +1,30 @@
+/* Font color */
+/* Background color */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0c51a6;
+  padding: 2.5rem 0 2.5rem 4rem;
+}
+header h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+header ul {
+  background: #0a4288;
+}
+header ul li {
+  display: inline-block;
+  text-align: center;
+}
+header ul li:hover {
+  background: #126bd8;
+}
+header ul li a {
+  display: block;
+  padding: 2rem 4.5rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+}

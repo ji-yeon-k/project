@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-/* Import SCSS Files */
+/* Import SCSS File 
 @import "reset";
+@import "variable";
 @import "header";
 @import "footer";
-@import "font";
-@import "variable";
+*/
 
 * {
     box-sizing: border-box;
@@ -19,5 +19,8 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 1;
+    max-width: 1200px;
+    margin: 0 auto;
 }

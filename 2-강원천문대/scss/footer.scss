@@ -1,1 +1,52 @@
-@charset "utf-8";
+@import "variable";
+
+footer {
+    display: flex;
+    align-items: center;
+    background: $bgc-g;
+    padding: 2.4rem 0 2.4rem 3.2rem;
+    h3 {
+        color: $fc-lg;
+        font-size: 3rem;
+    }
+    .copy-wrap {
+        margin-left: 23rem;
+        color: $fc-g;
+        ul {
+            margin-bottom: 2rem;
+            li{
+                display: inline-block;
+                margin-right: 1.5rem;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: -9px;
+                    width: 1px;
+                    height: 100%;
+                    background: $fc-g;
+                }
+                &:last-child {
+                    margin-right: 0;
+                    &::before {
+                        display: none;
+                    }
+                }
+                a {
+                    display: block;
+                    color: $fc-g;
+                    font-size: 1.4rem;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 1.4rem;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+}

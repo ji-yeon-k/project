@@ -1,0 +1,52 @@
+/* Font color */
+/* Background color */
+footer {
+  display: flex;
+  align-items: center;
+  background: #e7e7e7;
+  padding: 2.4rem 0 2.4rem 3.2rem;
+}
+footer h3 {
+  color: #8f7f7f;
+  font-size: 3rem;
+}
+footer .copy-wrap {
+  margin-left: 23rem;
+  color: #333;
+}
+footer .copy-wrap ul {
+  margin-bottom: 2rem;
+}
+footer .copy-wrap ul li {
+  display: inline-block;
+  margin-right: 1.5rem;
+  position: relative;
+}
+footer .copy-wrap ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -9px;
+  width: 1px;
+  height: 100%;
+  background: #333;
+}
+footer .copy-wrap ul li:last-child {
+  margin-right: 0;
+}
+footer .copy-wrap ul li:last-child::before {
+  display: none;
+}
+footer .copy-wrap ul li a {
+  display: block;
+  color: #333;
+  font-size: 1.4rem;
+}
+footer .copy-wrap ul li a:hover {
+  text-decoration: underline;
+}
+footer .copy-wrap p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: center;
+}
