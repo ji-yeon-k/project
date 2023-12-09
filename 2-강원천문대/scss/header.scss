@@ -10,20 +10,49 @@ header {
         font-size: 3rem;
         color: $fc-w;
     }
-    ul {
+    .nav {
         background: $bgc-d-bl;
-        li {
-            display: inline-block;
-            text-align: center;
-            &:hover {
-                background: $bgc-m-bl;
-            }
-            a {
-                display: block;
-                padding: 2rem 4.5rem;
-                color: $fc-w;
-                font-size: 1.6rem;
-                font-weight: 300;
+        z-index: 2;
+        > ul {
+            display: flex;
+            justify-content: right;
+            > li {
+                position: relative;
+                > a {
+                    display: inline-block;
+                    padding: 2rem 4.5rem;
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    color: #fff;
+                    transition: all .2s;
+                    &:hover {
+                        background-color: $bgc-m-bl;
+                    }
+                }
+                > ul {
+                    position: absolute;
+                    top: 5.6rem;
+                    left: 0;
+                    background: $fc-w;
+                    width: 100%;
+                    text-align: center;
+                    display: none;
+                    > li {
+                        > a {
+                            display: inline-block;
+                            padding: 1.5rem ;
+                            font-size: 1.6rem;
+                            font-weight: 300;
+                            width: 100%;
+                            box-sizing: border-box;
+                            transition: all .2s;
+                            &:hover {
+                                background: $bgc-l-bl;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

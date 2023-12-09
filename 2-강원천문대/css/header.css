@@ -11,20 +11,47 @@ header h1 {
   font-size: 3rem;
   color: #fff;
 }
-header ul {
+header .nav {
   background: #0a4288;
+  z-index: 2;
 }
-header ul li {
+header .nav > ul {
+  display: flex;
+  justify-content: right;
+}
+header .nav > ul > li {
+  position: relative;
+}
+header .nav > ul > li > a {
   display: inline-block;
-  text-align: center;
-}
-header ul li:hover {
-  background: #126bd8;
-}
-header ul li a {
-  display: block;
   padding: 2rem 4.5rem;
-  color: #fff;
   font-size: 1.6rem;
   font-weight: 300;
+  color: #fff;
+  transition: all 0.2s;
+}
+header .nav > ul > li > a:hover {
+  background-color: #126bd8;
+}
+header .nav > ul > li > ul {
+  position: absolute;
+  top: 5.6rem;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+header .nav > ul > li > ul > li > a {
+  display: inline-block;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+header .nav > ul > li > ul > li > a:hover {
+  background: #e5f1ff;
+  font-weight: 500;
 }
