@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-/* Import SCSS File 
-@import "reset";
-@import "variable";
-@import "header";
-@import "footer";
-*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,4 +16,32 @@ body {
     line-height: 1;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* slider */
+.sliderWrap {
+    position: relative;
+}
+.sliderWrap > div {
+    display: none;
+}
+.sliderWrap > div:first-child {
+    display: block;
+}
+.sliderWrap .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sliderWrap .slider img {
+    vertical-align: top;
+}
+.sliderWrap .slider .slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,.4);
+    padding: 10px 20px;
+    color: #fff;
 }
