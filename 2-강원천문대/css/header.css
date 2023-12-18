@@ -1,6 +1,7 @@
 /* Font color */
 /* Background color */
 header {
+  height: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    display: flex;
+}
+#header .logo {
+    width: 20%;
+    height: 100px;
+    background-color: #efefef;
+}
+#header .nav {
+    width: 80%;
+    height: 100px;
+    background-color: #e3e3e3;
+}
+#slider {
+    width: 100%;
+    height: 300px;
+    background-color: #d9d9d9;
+}
+#contents {
+    width: 100%;
+    display: flex;
+}
+#contents .content1 {
+    width: 33.3333%;
+    height: 200px;
+    background-color: #d1d1d1;
+}
+#contents .content2 {
+    width: 33.3333%;
+    height: 200px;
+    background-color: #c7c7c7;
+}
+#contents .content3 {
+    width: 33.3333%;
+    height: 200px;
+    background-color: #bcbcbc;
+}
+#footer {
+    width: 100%;
+    display: flex;
+}
+#footer .footer1 {
+    width: 20%;
+    height: 100px;
+    background-color: #b1b1b1;
+}
+#footer .footer2 {
+    width: 60%;
+    height: 100px;
+    background-color: #a3a3a3;
+}
+#footer .footer3 {
+    width: 20%;
+    height: 100px;
+    background-color: #9d9d9d;
+}
+
+/* tab-menu */
+.tab-menu {
+    padding: 20px;
+}
+.tab-menu .tab-btn ul {
+    display: flex;
+}
+.tab-menu .tab-btn li {
+    list-style: none;
+}
+.tab-menu .tab-btn li:hover {
+    text-decoration: underline;
+}
+.tab-menu .tab-btn li.active a {
+    color: #fff;
+}
+.tab-menu .tab-btn li.active:hover {
+    text-decoration-color: #fff;
+}
+.tab-menu .tab-btn li a {
+    display: block;
+    padding: 10px;
+    background-color: #6b6b6b;
+}
+.tab-menu .tab-cont > div {
+    padding: 10px;
+    background-color: #b0b0b0;
+    line-height: 1.6;
+}
